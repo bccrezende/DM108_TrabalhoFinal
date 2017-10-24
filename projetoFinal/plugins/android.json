@@ -9,6 +9,18 @@
   "installed_plugins": {
     "cordova-plugin-whitelist": {
       "PACKAGE_NAME": "org.bccrezende.planner"
+    },
+    "cordova-plugin-statusbar": {
+      "PACKAGE_NAME": "org.bccrezende.planner"
+    },
+    "cordova-plugin-vibration": {
+      "PACKAGE_NAME": "org.bccrezende.planner"
+    },
+    "cordova-plugin-network-information": {
+      "PACKAGE_NAME": "org.bccrezende.planner"
+    },
+    "cordova-plugin-nativestorage": {
+      "PACKAGE_NAME": "org.bccrezende.planner"
     }
   },
   "dependent_plugins": {}
