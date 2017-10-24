@@ -81,7 +81,8 @@ module.exports.metadata =
     "cordova-plugin-statusbar": "2.2.3",
     "cordova-plugin-vibration": "2.1.5",
     "cordova-plugin-network-information": "1.3.3",
-    "cordova-plugin-nativestorage": "2.2.2"
+    "cordova-plugin-nativestorage": "2.2.2",
+    "cordova-plugin-browsersync": "0.1.7"
 }
 // BOTTOM OF METADATA
 });

@@ -11,7 +11,7 @@
         onDeviceReady: function() {
             //myApp.alert('Exemplo modal', 'Exemplo modal!');
         }
-    }; 
+    };  
     
 app.initialize();*/
     
