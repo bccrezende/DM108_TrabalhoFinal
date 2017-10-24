@@ -2,8 +2,25 @@ var TodoService = {
 
     todos: new Array(),
 
+    /**
+     * Returna um promise, será úitl retorná-lo ao invés
+     * da resposta, possibilitará o reuso.
+     */
     getAll: function(){
-        return this.todos;
+        var todoCall = $.ajax({
+            type:"GET",
+            url: "http://jsonplaceholder.typicode.com/todos"
+        });
+        return todoCall;
+    },
+
+    parseDataToObject: function(data){
+        $.each(data, function() {
+            var todo = new Todo(this.title, new Date().toLocaleDateString(), this.completed);
+            todo.id = this.id;
+            TodoService.todos.push(todo);
+       });
+       return TodoService.todos;
     },
 
     getTodoByTitulo: function(titulo){

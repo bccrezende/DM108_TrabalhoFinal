@@ -11,7 +11,7 @@
     <div data-page="addTodo" class="page">
       <!-- Scrollable page content-->
       <div class="page-content">
-        <div class="content-block-title">Minha Nova Atividade:</div>
+        <div class="content-block-title">Todo</div>
         <div class="list-block">
           <ul>
             <li>
@@ -19,8 +19,7 @@
                 <div class="item-media"><i class="icon icon-form-titulo"></i></div>
                 <div class="item-inner"> 
                   <div class="item-input">
-                      <br>  
-                    <input type="text" name="titulo" id="titulo" value="{{url_query.titulo}}" placeholder="Meu compromisso é:"/>
+                    <input type="text" name="titulo" id="titulo" value="{{url_query.titulo}}" placeholder="O que devo fazer?"/>
                   </div>
                 </div>
               </div>
@@ -30,7 +29,7 @@
                 <div class="item-media"><i class="icon icon-form-quando"></i></div>
                 <div class="item-inner"> 
                   <div class="item-input">
-                    <input type="date" name="data" id="data" value="{{url_query.data}}" placeholder="Data:"/>
+                    <input type="date" name="data" id="data" value="{{url_query.data}}" placeholder="Quando?"/>
                   </div>
                 </div>
               </div>
@@ -40,7 +39,7 @@
                   <input type="checkbox" name="pronto" id="pronto" value="pronto"/>
                   <div class="item-media"><i class="icon icon-form-checkbox"></i></div>
                   <div class="item-inner">
-                    <div class="item-title">Confirmar</div>
+                    <div class="item-title">Pronto</div>
                   </div>
                 </label>
             </li>

@@ -6,15 +6,15 @@ var TodoController = {
         $$(document).on("click", "#save", TodoController.save);
         $$(document).on("click", "#cancel", TodoController.cancel);
 
-        //load todo list
-        TodoController.refreshTodoList();
-    },
+        //load main view
+       TodoController.backToMainView();
+    }, 
 
     goToAdd: function () {
         //Framework7 carregando a página addTodo
         mainView.router.loadPage("addTodo.html");
     },
-
+  
     save: function(){
         var titulo = $$("#titulo").val();
         var data = $$("#data").val();
@@ -22,29 +22,43 @@ var TodoController = {
 
         if (!id) {
             TodoService.add(titulo, data, false);
-        } else {
+        } else { 
             var todo = new Todo(titulo, data, false);
             todo.id = id;
             TodoService.edit(todo);
         }
         
         //refresh todo list
-        TodoController.refreshTodoList();
+        TodoController.backToMainView();
     },
 
     cancel: function(){
-        TodoController.refreshTodoList();
+        TodoController.backToMainView();
     },
 
-    refreshTodoList: function(){
+    backToMainView: function(){
         //back to view
-        mainView.router.back();
+        /** 
+         * Forçando a volta para view principal
+         * carregando e ignorando o cache default do Framework7
+        */
+         mainView.router.back({
+            url: "index.html",
+            reload: true,
+            ignoreCache: true
+        });
+    },
 
-        var todoList = TodoService.getAll();
-        //virtual list framework 7
-        myApp.virtualList('.list-block.virtual-list', {
-            items: todoList,
-            // Template 7 template ira renderizar os itens
+    /**
+     * Retorna uma instancia da virtual list do Framework7.
+     * Basicamente é o template padrão de nossa lista de dados
+     * http://framework7.io/docs/virtual-list.html
+     */
+    buildList: function(){
+        return myApp.virtualList('.list-block.virtual-list', {
+            cache: false,
+            items: new Array(),
+            // Template 7 template irá renderizar os itens
             template: '<li>' +
                         '<a href="addTodo.html?id={{id}}&titulo={{titulo}}&data={{data}}" class="item-link">'+
                           '<div class="item-content">' + 

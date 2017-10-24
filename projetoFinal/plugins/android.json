@@ -1,27 +1,30 @@
 {
-  "prepare_queue": {
-    "installed": [],
-    "uninstalled": []
-  },
-  "config_munge": {
-    "files": {}
-  },
-  "installed_plugins": {
-    "cordova-plugin-whitelist": {
-      "PACKAGE_NAME": "org.bccrezende.planner"
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
     },
-    "cordova-plugin-statusbar": {
-      "PACKAGE_NAME": "org.bccrezende.planner"
+    "config_munge": {
+        "files": {}
     },
-    "cordova-plugin-vibration": {
-      "PACKAGE_NAME": "org.bccrezende.planner"
+    "installed_plugins": {
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "org.bccrezende.planner"
+        },
+        "cordova-plugin-statusbar": {
+            "PACKAGE_NAME": "org.bccrezende.planner"
+        },
+        "cordova-plugin-vibration": {
+            "PACKAGE_NAME": "org.bccrezende.planner"
+        },
+        "cordova-plugin-network-information": {
+            "PACKAGE_NAME": "org.bccrezende.planner"
+        },
+        "cordova-plugin-nativestorage": {
+            "PACKAGE_NAME": "org.bccrezende.planner"
+        },
+        "cordova-plugin-browsersync": {
+            "PACKAGE_NAME": "org.bccrezende.planner"
+        }
     },
-    "cordova-plugin-network-information": {
-      "PACKAGE_NAME": "org.bccrezende.planner"
-    },
-    "cordova-plugin-nativestorage": {
-      "PACKAGE_NAME": "org.bccrezende.planner"
-    }
-  },
-  "dependent_plugins": {}
+    "dependent_plugins": {}
 }
