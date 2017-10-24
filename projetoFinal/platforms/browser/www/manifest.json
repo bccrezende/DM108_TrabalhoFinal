@@ -1,0 +1,11 @@
+{
+  "background_color": "#FFF",
+  "display": "standalone",
+  "name": "Planner",
+  "short_name": "Planner",
+  "version": "org.bccrezende.planner",
+  "description": "Esse aplicativo é para auxiliar na organização das atividades diárias.",
+  "author": "Bárbara Rezende",
+  "icons": [],
+  "start_url": "index.html"
+}
