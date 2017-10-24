@@ -8,6 +8,9 @@
         Bárbara Rezende
     </author>
     <content src="index.html" />
+    <preference name="StatusBarBackgroundColor" value="#0000cc" />
+    <preference name="StatusBarStyle" value="lightcontent" />
+    <preference name="StatusBarOverlaysWebView" value="false" />
     <access origin="*" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
