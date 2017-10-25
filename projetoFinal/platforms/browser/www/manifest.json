@@ -7,5 +7,6 @@
   "description": "Esse aplicativo é para auxiliar na organização das atividades diárias.",
   "author": "Bárbara Rezende",
   "icons": [],
-  "start_url": "index.html"
+  "start_url": "index.html",
+  "theme_color": "#0000cc"
 }

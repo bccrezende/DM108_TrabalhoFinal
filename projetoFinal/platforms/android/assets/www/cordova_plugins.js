@@ -51,6 +51,14 @@ module.exports = [
     "id": "cordova-plugin-nativestorage.NativeStorageError",
     "file": "plugins/cordova-plugin-nativestorage/www/NativeStorageError.js",
     "pluginId": "cordova-plugin-nativestorage"
+  },
+  {
+    "id": "cordova-plugin-splashscreen.SplashScreen",
+    "file": "plugins/cordova-plugin-splashscreen/www/splashscreen.js",
+    "pluginId": "cordova-plugin-splashscreen",
+    "clobbers": [
+      "navigator.splashscreen"
+    ]
   }
 ];
 module.exports.metadata = 
@@ -60,7 +68,8 @@ module.exports.metadata =
   "cordova-plugin-statusbar": "2.2.3",
   "cordova-plugin-vibration": "2.1.5",
   "cordova-plugin-network-information": "1.3.3",
-  "cordova-plugin-nativestorage": "2.2.2"
+  "cordova-plugin-nativestorage": "2.2.2",
+  "cordova-plugin-splashscreen": "4.0.3"
 };
 // BOTTOM OF METADATA
 });

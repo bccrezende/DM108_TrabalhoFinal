@@ -21,6 +21,9 @@
     },
     "cordova-plugin-nativestorage": {
       "PACKAGE_NAME": "org.bccrezende.planner"
+    },
+    "cordova-plugin-splashscreen": {
+      "PACKAGE_NAME": "org.bccrezende.planner"
     }
   },
   "dependent_plugins": {}
